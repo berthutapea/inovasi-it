@@ -22,6 +22,7 @@
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.17",
     "eslint": "^7.32.0 || ^8.2.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^9.1.0",
@@ -30,9 +31,18 @@
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "framer-motion": "^10.18.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
+    "postcss": "^8.4.33",
     "prettier": "^3.2.4",
+    "prop-types": "^15.8.1",
+    "react-countup": "^6.5.0",
+    "react-icons": "^5.0.1",
+    "react-intersection-observer": "^9.5.3",
+    "react-scroll": "^1.9.0",
+    "react-type-animation": "^3.2.0",
+    "tailwindcss": "^3.4.1",
     "vite": "^5.0.8"
   }
 }
