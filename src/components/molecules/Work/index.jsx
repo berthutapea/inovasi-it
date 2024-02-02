@@ -1,21 +1,33 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { fadeIn } from '../../../hooks/Variants';
+import React, { useEffect, useState } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { headingAnimation } from '../../../hooks/UseAnimation';
 import Img1 from '../../../assets/images/portfolio-img1.png';
 import Img2 from '../../../assets/images/portfolio-img2.png';
 import Img3 from '../../../assets/images/portfolio-img3.png';
 import { Button } from '../../atoms';
 
 function Work() {
+  const [ref, inView] = useInView();
+  const [viewDiv, setViewDiv] = useState(false);
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      setViewDiv(true);
+    } else {
+      setViewDiv(false);
+    }
+  }, [inView, animation]);
+
   return (
     <section className="section" id="work">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-x-10">
           <motion.div
-            variants={fadeIn('right', 0.3)}
             initial="hidden"
-            whileInView="show"
-            viewport={{ once: false, amount: 0.3 }}
+            animate={viewDiv && 'visible'}
+            variants={headingAnimation}
             className="flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0"
           >
             <div>
@@ -51,10 +63,9 @@ function Work() {
             </div>
           </motion.div>
           <motion.div
-            variants={fadeIn('left', 0.2)}
             initial="hidden"
-            whileInView="show"
-            viewport={{ once: false, amount: 0.3 }}
+            animate={viewDiv && 'visible'}
+            variants={headingAnimation}
             className="flex-1 flex flex-col gap-y-10"
           >
             {/* image */}

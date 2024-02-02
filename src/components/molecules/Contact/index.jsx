@@ -1,18 +1,29 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { fadeIn } from '../../../hooks/Variants';
+import React, { useEffect, useState } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { headingAnimation } from '../../../hooks/UseAnimation';
 import { Button, Input, TextArea } from '../../atoms';
 
 function Contact() {
+  const [ref, inView] = useInView();
+  const [viewDiv, setViewDiv] = useState(false);
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      setViewDiv(true);
+    } else {
+      setViewDiv(false);
+    }
+  }, [inView, animation]);
   return (
     <section className="py-16 lg:section" id="contact">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row">
           <motion.div
-            variants={fadeIn('right', 0.3)}
             initial="hidden"
-            whileInView="show"
-            viewport={{ once: false, amount: 0.3 }}
+            animate={viewDiv && 'visible'}
+            variants={headingAnimation}
             className="flex-1 flex justify-start items-center"
           >
             <div>
@@ -25,10 +36,9 @@ function Contact() {
             </div>
           </motion.div>
           <motion.form
-            variants={fadeIn('left', 0.3)}
             initial="hidden"
-            whileInView="show"
-            viewport={{ once: false, amount: 0.3 }}
+            animate={viewDiv && 'visible'}
+            variants={headingAnimation}
             className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start"
           >
             <Input type="text" placeholder="Your name" />

@@ -1,0 +1,24 @@
+.secondary-button {
+  padding: 2px 20px;
+  font-weight: 600;
+  border-radius: 6px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #b936ee;
+  cursor: pointer;
+  color: white;
+}
+
+.secondary-button:hover {
+  background: linear-gradient(
+    92.23deg,
+    #406aff 21.43%,
+    #3bace2 50.63%,
+    #b936ee 100%,
+    #ff56f6 117.04%
+  );
+}

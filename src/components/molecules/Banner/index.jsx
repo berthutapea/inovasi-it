@@ -1,45 +1,51 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { FaGithub, FaYoutube, FaDribbble } from 'react-icons/fa';
+import React, { useEffect, useState } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 import { TypeAnimation } from 'react-type-animation';
-import Image from '../../../assets/images/avatar.svg';
-import { fadeIn } from '../../../hooks/Variants';
-import { Button } from '../../atoms';
+import AvatarLogoIIT from '../../../assets/images/AvatarLogoIIT.png';
+import {
+  avatarAnimation,
+  sectionBodyAnimation,
+} from '../../../hooks/UseAnimation';
 
 function Banner() {
+  const [ref, inView] = useInView();
+  const [viewDiv, setViewDiv] = useState(false);
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      setViewDiv(true);
+    } else {
+      setViewDiv(false);
+    }
+  }, [inView, animation]);
+
   return (
-    <section
-      className="min-h-[85vh] lg:min-h-[78vh] flex items-center"
-      id="home"
-    >
+    <section className="min-h-[85vh] lg:min-h-[90] flex items-center" id="home">
       <div className="container mx-auto">
-        <div className="flex flex-cool gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
-          {/* text */}
-          <div className="flex-1 text-center font-secondary lg:text-left">
-            <motion.h1
-              variants={fadeIn('up', 0.3)}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: false, amount: 0.7 }}
-              className="text-[55px] font-bold leading-[0.8] lg:text-[110px]"
-            >
-              BEN <span>AIDEN</span>
-            </motion.h1>
-            <motion.div
-              variants={fadeIn('up', 0.4)}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: false, amount: 0.7 }}
-              className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
-            >
-              <span className="text-white mr-4">I am a</span>
+        <div className="flex flex-col-reverse lg:flex-row lg:items-center lg:gap-x-12 translate-y-[-5%] sm:translate-y-[-0%">
+          <motion.div
+            ref={ref}
+            initial="hidden"
+            animate={viewDiv && 'visible'}
+            variants={sectionBodyAnimation}
+            className="flex-1 text-center font-secondary lg:text-left mt-20"
+          >
+            <h1 className="text-[55px] font-bold leading-[0.8] lg:text-[110px] text-gradient mb-8 translate-y-[-20%] sm:translate-y-[-0%">
+              Inovasi <span>IT</span>
+            </h1>
+            <div className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]">
+              <span className="text-white mr-4">Events</span>
               <TypeAnimation
                 sequence={[
-                  'Developer',
+                  'SEMINAR',
                   2000,
-                  'Designer',
+                  'WEBINAR',
                   2000,
-                  'Yotuber',
+                  'WORKSHOP',
+                  2000,
+                  'COMPETITIONS',
                   2000,
                 ]}
                 speed={50}
@@ -47,54 +53,26 @@ function Banner() {
                 wrapper="span"
                 repeat={Infinity}
               />
-            </motion.div>
-            <motion.p
-              variants={fadeIn('up', 0.5)}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: false, amount: 0.7 }}
-              className="mb-8 max-w-lg mx-auto lg:mx-0"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
-              numquam. Harum deleniti id sapiente.
-            </motion.p>
-            <motion.div
-              variants={fadeIn('up', 0.6)}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: false, amount: 0.7 }}
-              className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
-            >
-              <Button>
-                Contact me
-                <a href="/">My Portfolio</a>
-              </Button>
-            </motion.div>
-            <motion.div
-              variants={fadeIn('up', 0.7)}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: false, amount: 0.7 }}
-              className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
-            >
-              <a href="/" aria-label="Link to YouTube">
-                <FaYoutube />
-              </a>
-              <a href="/" aria-label="Link to GitHub">
-                <FaGithub />
-              </a>
-              <a href="/" aria-label="Link to Dribble">
-                <FaDribbble />
-              </a>
-            </motion.div>
-          </div>
+            </div>
+            <p className="mb-8 max-w-lg mx-auto lg:mx-0">
+              Berinovasi Bersama Menuju Sukses Tak Terbatas
+            </p>
+          </motion.div>
           <motion.div
-            variants={fadeIn('down', 0.5)}
+            variants={avatarAnimation}
             initial="hidden"
-            whileInView="show"
-            className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]"
+            animate="show"
+            className="flex-1 max-w-[360px] lg:max-w-[482px] justify-center lg:justify-start"
           >
-            <img src={Image} alt="" />
+            <motion.img
+              ref={ref}
+              initial="hidden"
+              animate={viewDiv && 'visible'}
+              variants={sectionBodyAnimation}
+              src={AvatarLogoIIT}
+              alt="Inovasi IT Logo"
+              className="w-full max-w-[360px] lg:max-w-[482px] mx-auto lg:mx-0"
+            />
           </motion.div>
         </div>
       </div>

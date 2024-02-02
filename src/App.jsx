@@ -4,7 +4,7 @@ import {
   Header,
   Navigation,
   About,
-  Services,
+  Events,
   Work,
   Contact,
 } from './components';
@@ -16,7 +16,7 @@ function App() {
       <Banner />
       <Navigation />
       <About />
-      <Services />
+      <Events />
       <Work />
       <Contact />
       {/* <div className='h-[4000px]' /> */}

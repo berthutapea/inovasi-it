@@ -40,8 +40,11 @@
     "react-countup": "^6.5.0",
     "react-icons": "^5.0.1",
     "react-intersection-observer": "^9.5.3",
+    "react-lottie": "^1.2.4",
     "react-scroll": "^1.9.0",
+    "react-slick": "^0.30.1",
     "react-type-animation": "^3.2.0",
+    "slick-carousel": "^1.8.1",
     "tailwindcss": "^3.4.1",
     "vite": "^5.0.8"
   }
