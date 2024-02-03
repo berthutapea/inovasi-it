@@ -72,7 +72,7 @@ function Header() {
                 Events
               </Link>
               <Link
-                to="work"
+                to="sponsor"
                 activeClass="active-nav"
                 smooth
                 spy

@@ -5,7 +5,7 @@ import {
   Navigation,
   About,
   Events,
-  Work,
+  Sponsor,
   Contact,
 } from './components';
 
@@ -17,9 +17,9 @@ function App() {
       <Navigation />
       <About />
       <Events />
-      <Work />
+      <Sponsor />
       <Contact />
-      {/* <div className='h-[4000px]' /> */}
+      <div className="h-[4000px]" />
     </div>
   );
 }

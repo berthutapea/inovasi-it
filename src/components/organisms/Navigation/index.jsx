@@ -38,7 +38,7 @@ function Navigation() {
               <BsClipboardData />
             </Link>
             <Link
-              to="work"
+              to="sponsor"
               activeClass="active"
               smooth
               spy

@@ -11,14 +11,14 @@ const events = [
     title: '2. WEBINAR',
     img: 'https://res.cloudinary.com/du541igfh/image/upload/v1706842329/Blog%20Portfolio%20Gilbert/Project/Inovasi%20IT/02_vbaiwn.png',
     description:
-      'Merupakan platform edukatif di bidang IT yang memfasilitasi interaksi langsung antara peserta dan pemateri. Program ini dirancang untuk memberikan pelatihan singkat kepada sekitar 200 peserta dengan fokus pada topik yang relevan.',
+      'Merupakan platform edukatif di bidang IT yang memfasilitasi interaksi langsung antara peserta dan pemateri. Program ini dirancang untuk memberikan pelatihan singkat kepada sekitar 300 peserta dengan fokus pada topik yang relevan.',
   },
   {
     id: 3,
     title: '3. WORKSHOP',
     img: 'https://res.cloudinary.com/du541igfh/image/upload/v1706842329/Blog%20Portfolio%20Gilbert/Project/Inovasi%20IT/03_e6bvsh.png',
     description:
-      'Fasilitas pelatihan IT yang memungkinkan peserta berinteraksi langsung dengan pemateri selama Workshop. Program ini menawarkan pelatihan singkat untuk sekitar 130 peserta.',
+      'Fasilitas pelatihan IT yang memungkinkan peserta berinteraksi langsung dengan pemateri selama Workshop. Program ini menawarkan pelatihan singkat untuk sekitar 300 peserta.',
   },
   {
     id: 4,
