@@ -1,5 +1,6 @@
+import Footer from './Footer';
 import Header from './Header';
-import Navigation from './Navigation';
 import Map from './Map';
+import Navigation from './Navigation';
 
-export { Header, Navigation, Map };
+export { Footer, Header, Map, Navigation };

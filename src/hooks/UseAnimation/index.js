@@ -41,6 +41,7 @@ export const headingAnimation = {
   },
 };
 
+// Section Contact Animation
 export const contactAnimation = {
   hidden: {
     y: -200,

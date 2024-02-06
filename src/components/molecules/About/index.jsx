@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion';
-import { sectionBodyAnimation } from '../../../hooks/UseAnimation';
+import { headingAnimation, sectionBodyAnimation } from '../../../hooks/UseAnimation';
 import { BottomLine } from '../../atoms';
 
 function About() {
@@ -27,12 +27,21 @@ function About() {
             ref={ref}
             initial="hidden"
             animate={viewDiv && 'visible'}
-            variants={sectionBodyAnimation}
+            variants={headingAnimation}
             className={`flex-1 ${viewDiv ? 'mt-40' : 'lg:mt-0'}`}
           >
-            <h2 className="h2 text-accent text-center">Tentang Kami</h2>
+            <h3 className="text-center text-[#45b8ff]">Apa itu Inovasi IT?</h3>
+            <h1 className="text-4xl font-semibold text-center drop-shadow-md">
+              Tentang Kami
+            </h1>
             <BottomLine />
-            <p className="text-center mt-20">
+            <motion.p
+              ref={ref}
+              initial="hidden"
+              animate={viewDiv && 'visible'}
+              variants={sectionBodyAnimation}
+              className="text-center mt-20"
+            >
               Inovasi IT adalah sebuah acara besar yang diselenggarakan oleh
               Himpunan Mahasiswa Teknik Informatika (HIMATI) Sekolah Tinggi
               Teknologi Informatika Sony Sugema. Acara ini telah sukses
@@ -40,7 +49,7 @@ function About() {
               tahun 2020. Setiap tahunnya, rangkaian kegiatan termasuk seminar,
               webinar, workshop, dan kompetisi dihadirkan dalam format yang
               menarik dan informatif.
-            </p>
+            </motion.p>
           </motion.div>
         </div>
       </div>

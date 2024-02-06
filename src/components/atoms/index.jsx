@@ -1,8 +1,19 @@
-import Form from './Form';
-import Input from './Input';
-import Button from './Button';
 import BottomLine from './BottomLine';
-import TextArea from './TextArea';
+import Button from './Button';
+import ButtonUp from './ButtonUp';
+import Input from './Input';
+import Loader from './Loader';
+import ScrollToTop from './ScrollToTop';
 import SecondaryBtn from './SecondaryBtn';
+import TextArea from './TextArea';
 
-export { Button, BottomLine, Form, Input, TextArea, SecondaryBtn };
+export {
+  BottomLine,
+  Button,
+  ButtonUp,
+  Input,
+  Loader,
+  ScrollToTop,
+  SecondaryBtn,
+  TextArea,
+};

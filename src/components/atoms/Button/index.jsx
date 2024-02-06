@@ -17,7 +17,8 @@ function Button({ children, className, onClick }) {
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
-  className: PropTypes.string.isRequired,
+  // eslint-disable-next-line react/require-default-props
+  className: PropTypes.string,
   onClick: PropTypes.func.isRequired,
 };
 

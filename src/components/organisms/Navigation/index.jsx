@@ -1,7 +1,9 @@
 import React from 'react';
-import { BiHomeAlt, BiUser } from 'react-icons/bi';
-import { BsClipboardData, BsBriefcase, BsChatSquareText } from 'react-icons/bs';
+import { BiUser } from 'react-icons/bi';
+import { BsChatSquareText } from 'react-icons/bs';
 import { Link } from 'react-scroll';
+import { SiGithubsponsors } from 'react-icons/si';
+import { IoCalendarClearOutline, IoHomeOutline } from 'react-icons/io5';
 
 function Navigation() {
   return (
@@ -17,7 +19,7 @@ function Navigation() {
               offset={-200}
               className="cursor-pointer w-[60-px] h-[60px] flex items-center justify-center"
             >
-              <BiHomeAlt />
+              <IoHomeOutline />
             </Link>
             <Link
               to="about"
@@ -35,7 +37,7 @@ function Navigation() {
               spy
               className="cursor-pointer w-[60-px] h-[60px] flex items-center justify-center"
             >
-              <BsClipboardData />
+              <IoCalendarClearOutline />
             </Link>
             <Link
               to="sponsor"
@@ -44,7 +46,7 @@ function Navigation() {
               spy
               className="cursor-pointer w-[60-px] h-[60px] flex items-center justify-center"
             >
-              <BsBriefcase />
+              <SiGithubsponsors />
             </Link>
             <Link
               to="contact"

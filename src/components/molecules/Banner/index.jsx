@@ -24,7 +24,7 @@ function Banner() {
   return (
     <section className="min-h-[85vh] lg:min-h-[90] flex items-center" id="home">
       <div className="container mx-auto">
-        <div className="flex flex-col-reverse lg:flex-row lg:items-center lg:gap-x-12 translate-y-[-5%] sm:translate-y-[-0%">
+        <div className="flex flex-col-reverse lg:flex-row lg:items-center lg:gap-x-12 translate-y-[-5%] sm:translate-y-[0%]">
           <motion.div
             ref={ref}
             initial="hidden"
@@ -32,7 +32,7 @@ function Banner() {
             variants={sectionBodyAnimation}
             className="flex-1 text-center font-secondary lg:text-left mt-20"
           >
-            <h1 className="text-[55px] font-bold leading-[0.8] lg:text-[110px] text-gradient mb-8 translate-y-[-20%] sm:translate-y-[-0%">
+            <h1 className="text-[55px] font-bold leading-[0.8] lg:text-[110px] text-gradient mb-8 translate-y-[-20%] sm:translate-y-[-20%]">
               Inovasi <span>IT</span>
             </h1>
             <div className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]">

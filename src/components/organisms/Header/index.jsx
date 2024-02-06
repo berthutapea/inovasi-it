@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
 import LogoIIT from '../../../assets/images/logo/LogoIIT.png';
-import { Button } from '../../atoms';
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,7 +31,7 @@ function Header() {
     >
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          <a href="/" aria-label="Link to Logo">
+          <a href="/" aria-label="Link to Home">
             <img
               className={`w-40 pr-20 ${isScrolled ? '' : ''}`}
               src={LogoIIT}
@@ -91,9 +90,11 @@ function Header() {
               </Link>
             </>
           )}
-          <div className="ml-10">
-            <Button>Login</Button>
-          </div>
+          <a href="/repair" aria-label="Link to Login">
+            <button className="btn btn-lg ml-10" type="submit">
+              Login
+            </button>
+          </a>
         </div>
       </div>
     </header>

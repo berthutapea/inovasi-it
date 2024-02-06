@@ -68,11 +68,15 @@ function Events() {
     >
       <motion.div
         className="mb-8"
+        ref={ref}
         initial="hidden"
         animate={viewDiv && 'visible'}
         variants={headingAnimation}
       >
-        <h2 className="h2 text-accent text-center">Events</h2>
+        <h3 className="text-center text-[#45b8ff]">4 Events</h3>
+        <h1 className="text-4xl font-semibold text-center drop-shadow-md">
+          Events
+        </h1>
         <BottomLine />
       </motion.div>
 
@@ -118,9 +122,16 @@ function Events() {
                   <p className="text-left text-sm md:text-base">
                     {event.description}
                   </p>
-                  <button type="submit" className="secondary-button mt-4">
-                    Daftar
-                  </button>
+                  <a
+                    aria-label="link"
+                    href={event.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button type="submit" className="secondary-button mt-4">
+                      Daftar
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -131,7 +142,7 @@ function Events() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             onClick={handlePrev}
-            className=" text-white py-2 px-4  absolute left-20 transform -translate-y-60 btn-link"
+            className=" text-white py-2 px-4 absolute left-20 transform -translate-y-60"
           >
             <FaArrowLeft />
           </Button>

@@ -48,8 +48,8 @@
     #b936ee 100%,
     #ff56f6 117.04%
   );
-  -webkit-background-clip: text; /* Menerapkan gradient ke teks */
-  color: transparent; /* Membuat warna teks menjadi transparan */
+  -webkit-background-clip: text; 
+  color: transparent; 
 }
 
 @layer base {
