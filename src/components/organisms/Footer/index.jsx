@@ -139,7 +139,7 @@ function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between mt-6">
           <p className="mb-4 md:mb-0">
             &copy; Copyright 2023,{' '}
-            <span className="font-bold">Inovasi IT - HIMATI-STTISS</span>
+            <span className="font-bold">Inovasi IT</span>
           </p>
           <p>
             <span className=" md:inline">Designed & Developed by </span>
