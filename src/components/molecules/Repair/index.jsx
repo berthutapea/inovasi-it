@@ -1,9 +1,11 @@
 import React from 'react';
 import RepairImg from '../../../assets/images/repair.png';
+import { BackButton } from '../../atoms';
 
 function Repair() {
   return (
     <div className="h-screen w-full flex flex-col md:flex-row items-center justify-center">
+      <BackButton />
       <div className="min-h-screen flex justify-center items-center">
         <img src={RepairImg} alt="Inovasi IT" className="w-70 h-70" />
       </div>
@@ -18,7 +20,7 @@ function Repair() {
             className="btn btn-lg ml-10 translate-y-[70%] sm:translate-y-[-0%]"
             type="submit"
           >
-            Pendaftran Seminar
+            Pendaftaran Seminar
           </button>
         </a>
       </div>

@@ -1,3 +1,4 @@
+import BackButton from './BackButton';
 import BottomLine from './BottomLine';
 import Button from './Button';
 import ButtonUp from './ButtonUp';
@@ -8,6 +9,7 @@ import SecondaryBtn from './SecondaryBtn';
 import TextArea from './TextArea';
 
 export {
+  BackButton,
   BottomLine,
   Button,
   ButtonUp,

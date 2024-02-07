@@ -136,11 +136,21 @@ function Footer() {
 
       <footer className="px-10 text-sm sm:py-6 py-12 text-center text-base-100 translate-y-[-40%] sm:translate-y-[0%]">
         <div className="w-full h-[1px] bg-white" />
-        <div className="flex flex-col items-center justify-center mt-6 md:flex-row text-white">
-          <p>
+        <div className="flex flex-col md:flex-row items-center justify-between mt-6">
+          <p className="mb-4 md:mb-0">
             &copy; Copyright 2023,{' '}
-            <span className="font-bold">Inovasi IT - HIMATI-STTISS.</span> All
-            Rights Reserved
+            <span className="font-bold">Inovasi IT - HIMATI-STTISS</span>
+          </p>
+          <p>
+            <span className=" md:inline">Designed & Developed by </span>
+            <a
+              href="https://berthutapea.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-white/50 font-bold"
+            >
+              <span className="underline">Gilbert Hutapea</span>
+            </a>
           </p>
         </div>
       </footer>

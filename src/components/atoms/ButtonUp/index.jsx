@@ -35,7 +35,7 @@ function ButtonUp() {
       onClick={handleClick}
       className={`fixed z-10 bottom-2 right-2 ${showButton ? 'block' : 'hidden'}`}
     >
-      <Button className=" py-2 px-4 rounded-full absolute right-2 transform -translate-y-40">
+      <Button className="py-2 px-4 rounded-full absolute right-2 translate-y-[-480%] sm:translate-y-[-250%]">
         <FaArrowUp />
       </Button>
     </button>

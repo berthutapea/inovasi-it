@@ -16,7 +16,7 @@ import {
   avatarAnimation,
   sectionBodyAnimation,
 } from '../../hooks/UseAnimation';
-import { Button } from '../../components/atoms';
+import { BackButton, Button } from '../../components/atoms';
 
 function Seminar() {
   const { id } = useParams();
@@ -54,7 +54,7 @@ function Seminar() {
 
   const handleOutsideClick = (event) => {
     if (enlargeImage && !imageRef.current.contains(event.target)) {
-      handleExitClick(); 
+      handleExitClick();
     }
   };
 
@@ -71,6 +71,7 @@ function Seminar() {
 
   return (
     <>
+      <BackButton />
       <div className="mt-20 parent">
         <h1 className="text-[50px] font-bold leading-[1.1] text-center text-gradient">
           {seminar?.title}
@@ -91,7 +92,7 @@ function Seminar() {
               variants={sectionBodyAnimation}
               src={seminar?.img}
               alt="Seminar Inovasi IT"
-              className={`main_seminar_image ${enlargeImage ? 'hidden' : ''}`} 
+              className={`main_seminar_image ${enlargeImage ? 'hidden' : ''}`}
               onClick={handleImageClick}
             />
           </motion.div>

@@ -122,13 +122,8 @@ function Events() {
                   <p className="text-left text-sm md:text-base">
                     {event.description}
                   </p>
-                  <a
-                    aria-label="link"
-                    href={event.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button type="submit" className="secondary-button mt-4">
+                  <a href={event.link} aria-label="Link to Event">
+                    <button className="secondary-button mt-4" type="submit">
                       Daftar
                     </button>
                   </a>

@@ -33,7 +33,7 @@ function Sponsor() {
   return (
     <section className="section" id="sponsor" ref={ref}>
       <div className="mx-auto">
-        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen translate-y-[5%] sm:translate-y-[-0%]">
+        <div>
           <motion.div
             initial="hidden"
             animate={viewDiv && 'visible'}
@@ -57,13 +57,13 @@ function Sponsor() {
                 <motion.div
                   // eslint-disable-next-line react/no-array-index-key
                   key={index}
-                  whileHover={{ scale: 1.2 }} 
+                  whileHover={{ scale: 1.2 }}
                   className="relative group"
                 >
                   <motion.img
                     src={logo.src}
                     alt={logo.alt}
-                    className="w-full lg:w-40 md:w-60 md:p-0 p-20 h-100 md:h-60 lg:h-auto object-cover object-center justify-center items-center mx-auto translate-y-[-10%] sm:translate-y-[-0%] duration-300"
+                    className="w-40 lg:w-40 md:w-60 md:p-0 h-30 md:h-60 lg:h-auto object-cover object-center justify-center items-center mx-auto translate-y-[-40%] sm:translate-y-[-0%] duration-300"
                   />
                 </motion.div>
               ))}
