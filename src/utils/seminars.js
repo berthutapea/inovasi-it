@@ -6,7 +6,7 @@ const seminars = [
     type: 'Seminar Nasional',
     time: '07.30 - 13:30 Wib',
     map: 'Auditoroium STTISS',
-    img: 'https://res.cloudinary.com/du541igfh/image/upload/v1707211883/Blog%20Portfolio%20Gilbert/Project/Inovasi%20IT/01_bmos24.png',
+    img: 'https://res.cloudinary.com/du541igfh/image/upload/v1707313342/Blog%20Portfolio%20Gilbert/Project/Inovasi%20IT/01_mgtdan.png',
     instagram_link: 'https://www.instagram.com/himati_sttiss/',
     whatsapp_link: 'https://chat.whatsapp.com/Ce99CbqLM6FAqnz8knMYW8',
     tags: ['#SeminarNasional', '#Digital5.0', '#InovasiIT', '#HIMATISTTISS'],
