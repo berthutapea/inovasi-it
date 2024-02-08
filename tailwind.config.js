@@ -23,9 +23,9 @@ module.exports = {
         primary: '#0a0a0a',
         accent: '#B809C3',
       },
-      backgroundImage: {
-        site: "url('src/assets/images/site-bg.jpg')",
-      },
+      // backgroundImage: {
+      //   site: "url('src/assets/images/site-bg.jpg')",
+      // },
     },
   },
   plugins: [],

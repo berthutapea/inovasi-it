@@ -14,13 +14,17 @@ import {
   Footer,
   Repair,
 } from './components';
+import BgSite from './assets/images/site-bg.jpg';
 
 const Home = lazy(() => import('./pages/Home'));
 const Seminar = lazy(() => import('./pages/Seminar'));
 
 function App() {
   return (
-    <div className="bg-site bg-no-repeat bg-cover overflow-hidden">
+    <div
+      className="bg-site bg-no-repeat bg-cover overflow-hidden"
+      style={{ backgroundImage: `url(${BgSite})` }}
+    >
       <Router>
         <ScrollToTop />
         <Routes>
