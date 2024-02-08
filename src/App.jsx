@@ -16,8 +16,11 @@ import {
 } from './components';
 import BgSite from './assets/images/site-bg.jpg';
 
-const Home = lazy(() => import('./pages/Home'));
-const Seminar = lazy(() => import('./pages/Seminar'));
+import Home from "./pages/Home/index"
+import Seminar from "./pages/Seminar/index"
+
+// const Home = lazy(() => import('./pages/Home'));
+// const Seminar = lazy(() => import('./pages/Seminar'));
 
 function App() {
   return (
@@ -31,8 +34,8 @@ function App() {
           <Route path="/" element={<HomeLayout />} />
           <Route path="/seminar" element={<Seminar />} />
           <Route path="/404" element={<NotFound />} />
-          <Route path="*" element={<Navigate to="/404" />} />
           <Route path="/repair" element={<Repair />} />
+          <Route path="*" element={<Navigate to="/404" />} />
         </Routes>
       </Router>
     </div>
