@@ -1,8 +1,8 @@
 import React, { lazy, Suspense } from 'react';
 import {
   BrowserRouter as Router,
-  Route,
   Routes,
+  Route,
   Navigate,
 } from 'react-router-dom';
 import {
@@ -31,7 +31,7 @@ function App() {
           <Route path="/" element={<HomeLayout />} />
           <Route path="/seminar" element={<Seminar />} />
           <Route path="/404" element={<NotFound />} />
-          <Route path="*" element={<Navigate replace to="/404" />} />
+          <Route path="*" element={<Navigate to="/404" />} />
           <Route path="/repair" element={<Repair />} />
         </Routes>
       </Router>
