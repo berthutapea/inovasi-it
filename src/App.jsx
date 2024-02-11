@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react';
+import React, { Suspense } from 'react';
 import {
   BrowserRouter as Router,
   Routes,
@@ -16,11 +16,8 @@ import {
 } from './components';
 import BgSite from './assets/images/site-bg.jpg';
 
-import Home from "./pages/Home/index"
-import Seminar from "./pages/Seminar/index"
-
-// const Home = lazy(() => import('./pages/Home'));
-// const Seminar = lazy(() => import('./pages/Seminar'));
+import Home from './pages/Home/index';
+import Seminar from './pages/Seminar/index';
 
 function App() {
   return (
