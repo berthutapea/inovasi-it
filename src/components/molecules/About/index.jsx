@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion';
-import { headingAnimation, sectionBodyAnimation } from '../../../hooks/UseAnimation';
+import {
+  headingAnimation,
+  sectionBodyAnimation,
+} from '../../../hooks/UseAnimation';
 import { BottomLine } from '../../atoms';
 
 function About() {
@@ -42,13 +45,15 @@ function About() {
               variants={sectionBodyAnimation}
               className="text-center mt-20"
             >
-              Inovasi IT adalah sebuah acara besar yang diselenggarakan oleh
-              Himpunan Mahasiswa Teknik Informatika (HIMATI) Sekolah Tinggi
-              Teknologi Informatika Sony Sugema. Acara ini telah sukses
-              dilaksanakan sebanyak 10 kali sejak pertama kali digelar pada
-              tahun 2020. Setiap tahunnya, rangkaian kegiatan termasuk seminar,
-              webinar, workshop, dan kompetisi dihadirkan dalam format yang
-              menarik dan informatif.
+              Inovasi IT merupakan ajang bergengsi yang diinisiasi oleh Himpunan
+              Mahasiswa Teknik Informatika (HIMATI) Sekolah Tinggi Teknologi
+              Informatika Sony Sugema. Sejak pertama kali digelar pada tahun
+              2020, acara ini telah menjadi platform inspiratif bagi mahasiswa
+              dan praktisi di bidang teknologi. Setiap tahun, Inovasi IT
+              menghadirkan rangkaian kegiatan yang dinamis dan edukatif,
+              meliputi seminar, webinar, workshop, serta kompetisi, yang
+              dirancang untuk memperluas wawasan dan mendorong terciptanya
+              inovasi di dunia teknologi
             </motion.p>
           </motion.div>
         </div>

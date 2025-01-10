@@ -1,5 +1,5 @@
 import React from 'react';
-import { Banner, About, Events, Sponsor, Contact } from '../../components';
+import { Banner, About, Events, Sponsor, Contact, Gallery } from '../../components';
 
 function App() {
   return (
@@ -7,6 +7,7 @@ function App() {
       <Banner />
       <About />
       <Events />
+      <Gallery />
       <Sponsor />
       <Contact />
     </>

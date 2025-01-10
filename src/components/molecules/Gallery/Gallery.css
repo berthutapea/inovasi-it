@@ -1,0 +1,37 @@
+.loading-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #45b8ff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.gallery-img {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.gallery-img.loaded {
+  display: block;
+}
