@@ -38,7 +38,7 @@ function Sponsor() {
             initial="hidden"
             animate={viewDiv && 'visible'}
             variants={headingAnimation}
-            className={`flex-1 ${viewDiv ? 'mt-40' : 'lg:mt-0'}`}
+            className={`flex-1 ${viewDiv ? 'mt-0' : 'lg:mt-0'}`}
           >
             <h3 className="text-center text-[#45b8ff]">
               Terima kasih kepada Sponsor & Media Partner
