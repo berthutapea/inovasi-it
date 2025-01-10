@@ -33,7 +33,9 @@ function Footer() {
           </div>
           <div className="flex items-center my-1">
             <MdEmail className="mr-2 text-2xl text-white hover:text-accent" />
-            <h3 className="font-medium text-white">himati.sttiss@gmail.com</h3>
+            <h3 className="font-medium text-white">
+              inovasiit.sttisonysugema@gmail.com
+            </h3>
           </div>
         </div>
 
@@ -138,8 +140,7 @@ function Footer() {
         <div className="w-full h-[1px] bg-white" />
         <div className="flex flex-col md:flex-row items-center justify-between mt-6">
           <p className="mb-4 md:mb-0">
-            &copy; Copyright 2023,{' '}
-            <span className="font-bold">Inovasi IT</span>
+            &copy; Copyright 2025, <span className="font-bold">Inovasi IT</span>
           </p>
           <p>
             <span className=" md:inline">Designed & Developed by </span>

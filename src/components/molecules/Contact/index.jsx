@@ -123,7 +123,7 @@ function Contact() {
           </div>
           <div className="flex items-center my-6">
             <MdEmail className="mr-8 text-3xl duration-300 hover:text-accent" />
-            <h3 className="font-medium text-white">himati.sttiss@gmail.com</h3>
+            <h3 className="font-medium text-white">inovasiit.sttisonysugema@gmail.com</h3>
           </div>
           <div className="flex items-center my-6">
             <FaLocationArrow className="mr-8 text-4xl duration-300 hover:text-accent" />

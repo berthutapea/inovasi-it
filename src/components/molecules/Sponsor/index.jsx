@@ -41,7 +41,7 @@ function Sponsor() {
             className={`flex-1 ${viewDiv ? 'mt-40' : 'lg:mt-0'}`}
           >
             <h3 className="text-center text-[#45b8ff]">
-              Terima kasih kepada Sponsor & Mitra Media kami
+              Terima kasih kepada Sponsor & Media Partner
             </h3>
             <h1 className="text-4xl font-semibold text-center drop-shadow-md">
               Sponsor
